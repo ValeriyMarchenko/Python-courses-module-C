@@ -187,7 +187,7 @@ class Game:
         self.ship_length = [3, 2, 2, 1, 1, 1, 1]
         players_board = self.rand_board()
         ai_board  = self.rand_board()
-        ai_board.hid = False
+        ai_board.hid = True
 
         self.ai = AI(ai_board, players_board)
         self.player = User(players_board, ai_board)
